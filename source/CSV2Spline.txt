@@ -1,29 +1,29 @@
 (InstanceState state, String csvFile, String csvSeparator, Single width, Int32 column, Single heightMultiply, Int32 CenMinFir) => 
   {
-    IArray[IArray[String]] _0ReadCSVData;// 1:ReadCSVData 117748
-    Single _1FloatZero;// 7:FloatZero 117765
-    Int32 _2Zero;// 51:Zero 117785
-    IArray[String] _3At;// 49:At 117784
-    Int32 _4Constant;// 0:Constant 117778
-    Boolean _5Equal;// 48:Equal 117776
-    Int32 _6Constant;// 0:Constant 117789
-    Single _7FloatZero;// 29:FloatZero 117832
-    IArray[Single] _8Map;// 21:Map 117825
-    IArray[Int32] _9Indices;// 2:IndexOfMinimum->1:Indices 117805
-    Int32 _10Zero;// 2:IndexOfMinimum->3:Zero 117806
-    Int32 _11Aggregate;// 2:IndexOfMinimum->2:Aggregate 117804
-    IArray[Int32] _12Unit;// 4:Array2->2:Unit 117802
-    IArray[Int32] _13Indices;// 3:IndexOfMaximum->1:Indices 117816
-    Int32 _14Zero;// 3:IndexOfMaximum->3:Zero 117817
-    Int32 _15Aggregate;// 3:IndexOfMaximum->2:Aggregate 117815
-    IArray[Int32] _16Append;// 4:Array2->3:Append 117801
-    IArray[Single] _17Map;// 2:SelectByIndex->2:Map 117796
-    Int32 _18Zero;// 33:First->2:Zero 117792
-    Single _19At;// 33:First->0:At 117791
-    Single _20Constant;// 0:Constant 117839
-    IArray[Vector3] _21Map;// 6:Map 117747
-    Boolean _22False;// 0:False 117840
-    Spline _23CreateSplineFromKnots;// 4:CreateSplineFromKnots 117746
+    IArray[IArray[String]] _0ReadCSVData;// 1:ReadCSVData 24762
+    Single _1FloatZero;// 7:FloatZero 24779
+    Int32 _2Zero;// 51:Zero 24799
+    IArray[String] _3At;// 49:At 24798
+    Int32 _4Constant;// 0:Constant 24792
+    Boolean _5Equal;// 48:Equal 24790
+    Int32 _6Constant;// 0:Constant 24803
+    Single _7FloatZero;// 29:FloatZero 24846
+    IArray[Single] _8Map;// 21:Map 24839
+    IArray[Int32] _9Indices;// 2:IndexOfMinimum->1:Indices 24819
+    Int32 _10Zero;// 2:IndexOfMinimum->3:Zero 24820
+    Int32 _11Aggregate;// 2:IndexOfMinimum->2:Aggregate 24818
+    IArray[Int32] _12Unit;// 4:Array2->2:Unit 24816
+    IArray[Int32] _13Indices;// 3:IndexOfMaximum->1:Indices 24830
+    Int32 _14Zero;// 3:IndexOfMaximum->3:Zero 24831
+    Int32 _15Aggregate;// 3:IndexOfMaximum->2:Aggregate 24829
+    IArray[Int32] _16Append;// 4:Array2->3:Append 24815
+    IArray[Single] _17Map;// 2:SelectByIndex->2:Map 24810
+    Int32 _18Zero;// 33:First->2:Zero 24806
+    Single _19At;// 33:First->0:At 24805
+    Single _20Constant;// 0:Constant 24853
+    IArray[Vector3] _21Map;// 6:Map 24761
+    Boolean _22False;// 0:False 24854
+    Spline _23CreateSplineFromKnots;// 4:CreateSplineFromKnots 24760
     _0ReadCSVData = ReadCSVData(csvFile, csvSeparator);
     _1FloatZero = FloatZero();
     _2Zero = Zero();
@@ -34,11 +34,11 @@
     _7FloatZero = FloatZero();
     _8Map = Map(_0ReadCSVData, (IArray[String] x0) => 
       {
-        IArray[Single] _0Map;// 22:ParseStringArrayToFloat->4:Map 117829
-        Single _1At;// 42:At 117826
+        IArray[Single] _0Map;// 22:ParseStringArrayToFloat->4:Map 24843
+        Single _1At;// 42:At 24840
         _0Map = Map(x0, (String x0) => 
           {
-            Single _0TryParseFloat;// 22:ParseStringArrayToFloat->2:TryParseFloat 117830
+            Single _0TryParseFloat;// 22:ParseStringArrayToFloat->2:TryParseFloat 24844
             _0TryParseFloat = TryParseFloat(x0, _7FloatZero);
             _0TryParseFloat;
             });
@@ -49,9 +49,9 @@
     _10Zero = Zero();
     _11Aggregate = Aggregate(_9Indices, _10Zero, (Int32 x0, Int32 x1) => 
       {
-        Single _0At;// 4:IndexOfLesserElement->4:At 117812
-        Single _1At;// 4:IndexOfLesserElement->5:At 117813
-        Boolean _2LessThanOrEqual;// 4:IndexOfLesserElement->2:LessThanOrEqual 117811
+        Single _0At;// 4:IndexOfLesserElement->4:At 24826
+        Single _1At;// 4:IndexOfLesserElement->5:At 24827
+        Boolean _2LessThanOrEqual;// 4:IndexOfLesserElement->2:LessThanOrEqual 24825
         _0At = At(_8Map, x0);
         _1At = At(_8Map, x1);
         _2LessThanOrEqual = LessThanOrEqual(_0At, _1At);
@@ -68,9 +68,9 @@
     _14Zero = Zero();
     _15Aggregate = Aggregate(_13Indices, _14Zero, (Int32 x0, Int32 x1) => 
       {
-        Single _0At;// 4:IndexOfGreaterElement->4:At 117823
-        Single _1At;// 4:IndexOfGreaterElement->5:At 117824
-        Boolean _2GreaterThanOrEqual;// 4:IndexOfGreaterElement->2:GreaterThanOrEqual 117822
+        Single _0At;// 4:IndexOfGreaterElement->4:At 24837
+        Single _1At;// 4:IndexOfGreaterElement->5:At 24838
+        Boolean _2GreaterThanOrEqual;// 4:IndexOfGreaterElement->2:GreaterThanOrEqual 24836
         _0At = At(_8Map, x0);
         _1At = At(_8Map, x1);
         _2GreaterThanOrEqual = GreaterThanOrEqual(_0At, _1At);
@@ -85,7 +85,7 @@
     _16Append = Append(_12Unit, _15Aggregate);
     _17Map = Map(_16Append, (Int32 x0) => 
       {
-        Single _0At;// 2:SelectByIndex->3:At 117797
+        Single _0At;// 2:SelectByIndex->3:At 24811
         _0At = At(_8Map, x0);
         _0At;
         });
@@ -94,22 +94,22 @@
     _20Constant = 2;
     _21Map = Map(_0ReadCSVData, (IArray[String] x0) => 
       {
-        IArray[Single] _0Map;// 8:ParseStringArrayToFloat->4:Map 117762
-        Int32 _1Zero;// 9:First->2:Zero 117759
-        Single _2At;// 9:First->0:At 117758
-        Single _3Multiply;// 16:Multiply 117756
-        Single _4Subtract;// 18:Subtract 117755
-        Single _5At;// 12:At 117770
-        Single _6Multiply;// 13:Multiply 117769
-        Single _7Subtract;// 24:Subtract 117768
-        Single _17Multiply;// 26:Multiply 117774
-        Single _18Subtract;// 25:Subtract 117773
-        Single _19Subtract;// 27:Subtract 117767
-        Single _20Constant;// 15:Vector3FromXY->0:Constant 117754
-        Vector3 _21Vector3;// 15:Vector3FromXY->0:Vector3 117753
+        IArray[Single] _0Map;// 8:ParseStringArrayToFloat->4:Map 24776
+        Int32 _1Zero;// 9:First->2:Zero 24773
+        Single _2At;// 9:First->0:At 24772
+        Single _3Multiply;// 16:Multiply 24770
+        Single _4Subtract;// 18:Subtract 24769
+        Single _5At;// 12:At 24784
+        Single _6Multiply;// 13:Multiply 24783
+        Single _7Subtract;// 24:Subtract 24782
+        Single _17Multiply;// 26:Multiply 24788
+        Single _18Subtract;// 25:Subtract 24787
+        Single _19Subtract;// 27:Subtract 24781
+        Single _20Constant;// 15:Vector3FromXY->0:Constant 24768
+        Vector3 _21Vector3;// 15:Vector3FromXY->0:Vector3 24767
         _0Map = Map(x0, (String x0) => 
           {
-            Single _0TryParseFloat;// 8:ParseStringArrayToFloat->2:TryParseFloat 117763
+            Single _0TryParseFloat;// 8:ParseStringArrayToFloat->2:TryParseFloat 24777
             _0TryParseFloat = TryParseFloat(x0, _1FloatZero);
             _0TryParseFloat;
             });
@@ -122,13 +122,13 @@
         _7Subtract = Subtract(_6Multiply, heightMultiply);
         _17Multiply = Multiply(heightMultiply, if (_5Equal)
             {
-              Single _8IntAsFloat;// 54:IntAsFloat 117786
-              IArray[Single] _9Map;// 52:ParseStringArrayToFloat->4:Map 117782
-              Single _10At;// 50:At 117779
+              Single _8IntAsFloat;// 54:IntAsFloat 24800
+              IArray[Single] _9Map;// 52:ParseStringArrayToFloat->4:Map 24796
+              Single _10At;// 50:At 24793
               _8IntAsFloat = IntAsFloat(_2Zero);
               _9Map = Map(_3At, (String x0) => 
                 {
-                  Single _0TryParseFloat;// 52:ParseStringArrayToFloat->2:TryParseFloat 117783
+                  Single _0TryParseFloat;// 52:ParseStringArrayToFloat->2:TryParseFloat 24797
                   _0TryParseFloat = TryParseFloat(x0, _8IntAsFloat);
                   _0TryParseFloat;
                   });
@@ -136,18 +136,18 @@
               _10At;
               }else
             {
-              Boolean _11Equal;// 45:Equal 117788
+              Boolean _11Equal;// 45:Equal 24802
               _11Equal = Equal(CenMinFir, _6Constant);
               if (_11Equal)
                 {
                   _19At;
                   }else
                 {
-                  Int32 _12One;// 32:Second->2:One 117838
-                  Single _13At;// 32:Second->0:At 117837
-                  Single _14Subtract;// 34:Subtract 117835
-                  Single _15Divide;// 36:Divide 117834
-                  Single _16Add;// 38:Add 117833
+                  Int32 _12One;// 32:Second->2:One 24852
+                  Single _13At;// 32:Second->0:At 24851
+                  Single _14Subtract;// 34:Subtract 24849
+                  Single _15Divide;// 36:Divide 24848
+                  Single _16Add;// 38:Add 24847
                   _12One = One();
                   _13At = At(_17Map, _12One);
                   _14Subtract = Subtract(_13At, _19At);

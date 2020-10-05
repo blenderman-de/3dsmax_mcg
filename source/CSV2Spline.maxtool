@@ -1,9 +1,10 @@
 <graph version="0.50" uuid="c51e2dab-a617-42a2-9028-fe218442082b">
     <meta_info>
-        <graph_version guid="9c85e1f8-0d43-4232-a22c-aa25bcf65d11" number="0.5.88" />
+        <graph_version guid="4e6fe8de-40d0-4222-9944-24be37f5c516" number="0.5.91" />
         <author>Oliver Nürnberger</author>
-        <category>MCG</category>
-        <description>Create row height with selectable CSV column. &#x0A;&#x0A;Multiply your height by a user-defined value. Select Pivot from Center, Minium or from first value.  Set the width according to the system unit scale. &#x0A;</description>
+        <copyright>2020</copyright>
+        <category>Splines</category>
+        <description>Create spline from selectable CSV column. &#x0A;&#x0A;Multiply your height by a user-defined value. Select Pivot from Center, Minium or from first value.  Set the width according to the system unit scale.&#x0A;</description>
     </meta_info>
     <nodes>
         <node operator="ReadCSVData" id="1" position="-540:-1460" size="140:133" />
