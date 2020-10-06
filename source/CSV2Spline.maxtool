@@ -1,6 +1,6 @@
 <graph version="0.50" uuid="c51e2dab-a617-42a2-9028-fe218442082b">
     <meta_info>
-        <graph_version guid="c89c8b58-a2fd-456c-97dc-fe40eec1b6af" number="0.5.107" />
+        <graph_version guid="c9346ba9-24b5-469b-8cd2-1903db786c3c" number="0.6.109" />
         <author>Oliver Nürnberger</author>
         <copyright>2020</copyright>
         <category>Splines</category>
@@ -51,14 +51,10 @@
         <node operator="At" id="50" position="2620:-536" size="140:133" />
         <node operator="ParseStringArrayToFloat" id="52" position="2360:-556" size="140:133" />
         <node operator="IntAsFloat" id="54" position="2160:-476" size="140:112" />
-        <node operator="Constant" id="58" value="0" position="-300:440" size="140:91" />
         <node operator="Pass-through: Int32" id="60" position="191:402" size="140:112" />
         <node operator="Indices" id="59" position="740:80" size="140:112" />
         <node operator="Map" id="61" position="1980:80" size="140:133" />
         <node operator="At" id="62" position="157:666" size="140:133" />
-        <node operator="Pass-through: array" id="10" position="-280:640" size="140:112" />
-        <node operator="FloatZero" id="7" position="-280:800" size="140:91" />
-        <node operator="ParseStringArrayToFloat" id="8" position="-160:720" size="140:133" />
         <node operator="IntAsFloat" id="6" position="567:315" size="140:112" />
         <node operator="PlusOne" id="63" position="402:299" size="140:112" />
         <node operator="Parameter: Single" id="9" name="heightAdd" min_value="-9999" max_value="9999" default_value="0" system_units_value="false" position="179:829" size="140:196" />

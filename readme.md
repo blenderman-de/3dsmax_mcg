@@ -4,7 +4,6 @@
 
 ## CSV2Spline
 
-
     source\CSV2Spline.maxtool
 
 Create spline from selectable CSV column. 
@@ -22,6 +21,11 @@ Multiply your height by a user-defined value. Select Pivot from Center, Minium o
 - `heightMultiplier` multpliy height width 
 - `CenMinFir` change pivot to height center, min or first data point 
 - `bezier` add bezier rounding 
+
+
+## Releases  
+
+- `CSV2Spline_0.6` First release, tested with max2017 
 
 
 ## Coding Reference 
