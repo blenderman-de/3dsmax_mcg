@@ -1,66 +1,88 @@
 <graph version="0.50" uuid="c51e2dab-a617-42a2-9028-fe218442082b">
     <meta_info>
-        <graph_version guid="4e6fe8de-40d0-4222-9944-24be37f5c516" number="0.5.91" />
+        <graph_version guid="3e801d59-2b9f-47a0-8f4f-0432e79cafdc" number="0.5.95" />
         <author>Oliver Nürnberger</author>
         <copyright>2020</copyright>
         <category>Splines</category>
         <description>Create spline from selectable CSV column. &#x0A;&#x0A;Multiply your height by a user-defined value. Select Pivot from Center, Minium or from first value.  Set the width according to the system unit scale.&#x0A;</description>
     </meta_info>
     <nodes>
-        <node operator="ReadCSVData" id="1" position="-540:-1460" size="140:133" />
-        <node operator="Output: shape" id="3" position="1480:-200" size="140:70" />
-        <node operator="CreateSplineFromKnots" id="4" position="1060:-220" size="140:133" />
-        <node operator="ParseStringArrayToFloat" id="8" position="-1360:-480" size="140:133" />
-        <node operator="FloatZero" id="7" position="-1600:-300" size="140:91" />
-        <node operator="Map" id="6" position="-80:-960" size="140:133" />
-        <node operator="Pass-through: array" id="10" position="-1640:-560" size="140:112" />
-        <node operator="Second" id="11" position="-1160:-340" size="140:112" />
-        <node operator="First" id="9" position="-1160:-480" size="140:112" />
-        <node operator="Parameter: Asset" id="5" name="csvFile" position="-820:-1420" size="140:112" />
-        <node operator="False" id="0" position="880:-20" size="140:91" />
-        <node operator="Parameter: String" id="14" name="csvSeparator" default_value="," position="-620:-1060" size="140:133" />
-        <node operator="Vector3FromXY" id="15" position="-351:-455" size="140:133" />
-        <node operator="Multiply" id="16" position="-731:-475" size="140:133" />
-        <node operator="Parameter: Single" id="2" name="width" min_value="-99999" max_value="99999" default_value="1" system_units_value="true" position="-1100:-680" size="140:196" />
-        <node operator="Subtract" id="18" position="-551:-555" size="140:133" />
-        <node operator="Parameter: Single" id="17" name="heightMultiply" min_value="-99999" max_value="99999" default_value="1" system_units_value="false" position="-1180:-80" size="140:196" />
-        <node operator="AutoSmoothSpline" id="19" position="1360:-120" size="140:133" />
-        <node operator="Constant" id="20" value="0.25" position="1100:-40" size="140:91" />
-        <node operator="Multiply" id="13" position="-880:-300" size="140:133" />
-        <node operator="Subtract" id="24" position="-640:-280" size="140:133" />
-        <node operator="Subtract" id="25" position="-580:-60" size="140:133" />
-        <node operator="Multiply" id="26" position="-880:60" size="140:133" />
-        <node operator="Subtract" id="27" position="-331:-155" size="140:133" />
-        <node operator="Map" id="21" position="-160:-1440" size="140:133" />
-        <node operator="ParseStringArrayToFloat" id="22" position="-980:-1680" size="140:133" />
-        <node operator="Pass-through: array" id="28" position="-1200:-1760" size="140:112" />
-        <node operator="FloatZero" id="29" position="-1200:-1580" size="140:91" />
-        <node operator="MinAndMaxElement" id="31" position="140:-1360" size="140:112" />
-        <node operator="Second" id="32" position="320:-1300" size="140:112" />
-        <node operator="First" id="33" position="360:-1460" size="140:112" />
-        <node operator="Subtract" id="34" position="740:-1620" size="140:133" />
-        <node operator="Divide" id="36" position="1060:-1520" size="140:133" />
-        <node operator="Constant" id="37" value="2.0" position="860:-1500" size="140:91" />
-        <node operator="Add" id="38" position="1220:-1280" size="140:133" />
-        <node operator="At" id="12" position="-1160:-220" size="140:133" />
-        <node operator="Constant" id="39" value="1" position="-1388:-158" size="140:91" />
-        <node operator="Parameter: Boolean" id="40" name="2center" default_value="true" position="420:-720" size="140:133" />
-        <node operator="If" id="35" position="1040:-1100" size="140:154" />
-        <node operator="Parameter: Int32" id="41" name="column" min_value="0" max_value="999" default_value="1" position="-1600:-120" size="140:175" />
-        <node operator="At" id="42" position="-740:-1720" size="140:133" />
-        <node operator="ParseBoolean" id="44" position="4883:-1177" size="140:112" />
-        <node operator="Equal" id="45" position="760:-1080" size="140:133" />
-        <node operator="Parameter: Int32" id="23" name="CenMinFir" min_value="1" max_value="3" default_value="1" position="560:-1200" size="140:175" />
-        <node operator="Constant" id="30" value="2" position="560:-1000" size="140:91" />
-        <node operator="Constant" id="43" value="3" position="740:-860" size="140:91" />
-        <node operator="If" id="46" position="1560:-920" size="140:154" />
-        <node operator="Constant" id="47" value="446.0" position="1160:-960" size="140:91" />
-        <node operator="Equal" id="48" position="1000:-900" size="140:133" />
-        <node operator="At" id="49" position="660:-2260" size="140:133" />
-        <node operator="Zero" id="51" position="340:-2340" size="140:91" />
-        <node operator="At" id="50" position="1160:-2240" size="140:133" />
-        <node operator="ParseStringArrayToFloat" id="52" position="920:-2220" size="140:133" />
-        <node operator="IntAsFloat" id="54" position="780:-2420" size="140:112" />
+        <node operator="ReadCSVData" id="1" position="663:-89" size="140:133" />
+        <node operator="Output: shape" id="3" position="2969:629" size="140:70" />
+        <node operator="CreateSplineFromKnots" id="4" position="2449:649" size="140:133" />
+        <node operator="ParseStringArrayToFloat" id="8" position="429:561" size="140:133" />
+        <node operator="FloatZero" id="7" position="209:641" size="140:91" />
+        <node operator="Map" id="6" position="2260:360" size="140:133" />
+        <node operator="Pass-through: array" id="10" position="209:501" size="140:112" />
+        <node operator="First" id="9" position="700:298" size="140:112" />
+        <node operator="Parameter: Asset" id="5" name="csvFile" position="429:-164" size="140:112" />
+        <node operator="False" id="0" position="2189:749" size="140:91" />
+        <node operator="Parameter: String" id="14" name="csvSeparator" default_value="," position="424:-45" size="140:133" />
+        <node operator="Vector3FromXY" id="15" position="1790:586" size="140:133" />
+        <node operator="Multiply" id="16" position="920:398" size="140:133" />
+        <node operator="Parameter: Single" id="2" name="width" min_value="-99999" max_value="99999" default_value="1" system_units_value="true" position="700:418" size="140:196" />
+        <node operator="Subtract" id="18" position="1240:458" size="140:133" />
+        <node operator="Parameter: Single" id="17" name="heightMultiply" min_value="-99999" max_value="99999" default_value="1" system_units_value="false" position="711:836" size="140:196" />
+        <node operator="AutoSmoothSpline" id="19" position="2689:809" size="140:133" />
+        <node operator="Constant" id="20" value="0.25" position="2509:909" size="140:91" />
+        <node operator="Multiply" id="13" position="940:697" size="140:133" />
+        <node operator="Subtract" id="24" position="1180:697" size="140:133" />
+        <node operator="Subtract" id="25" position="1180:857" size="140:133" />
+        <node operator="Multiply" id="26" position="940:857" size="140:133" />
+        <node operator="Subtract" id="27" position="1460:776" size="140:133" />
+        <node operator="Map" id="21" position="980:-160" size="140:133" />
+        <node operator="ParseStringArrayToFloat" id="22" position="609:-451" size="140:133" />
+        <node operator="Pass-through: array" id="28" position="389:-551" size="140:112" />
+        <node operator="FloatZero" id="29" position="389:-411" size="140:91" />
+        <node operator="MinAndMaxElement" id="31" position="1180:-160" size="140:112" />
+        <node operator="Second" id="32" position="1340:-20" size="140:112" />
+        <node operator="First" id="33" position="1320:-320" size="140:112" />
+        <node operator="Subtract" id="34" position="1589:-198" size="140:133" />
+        <node operator="Divide" id="36" position="1929:-218" size="140:133" />
+        <node operator="Constant" id="37" value="2.0" position="1769:-178" size="140:91" />
+        <node operator="Add" id="38" position="2109:-138" size="140:133" />
+        <node operator="At" id="12" position="711:688" size="140:133" />
+        <node operator="If" id="35" position="2909:-131" size="140:154" />
+        <node operator="Parameter: Int32" id="41" name="column" min_value="0" max_value="999" default_value="1" position="77:-139" size="140:175" />
+        <node operator="At" id="42" position="820:-400" size="140:133" />
+        <node operator="Equal" id="45" position="2729:-131" size="140:133" />
+        <node operator="Parameter: Int32" id="23" name="CenMinFir" min_value="1" max_value="3" default_value="1" position="2369:-251" size="140:175" />
+        <node operator="Constant" id="30" value="2" position="2549:-111" size="140:91" />
+        <node operator="Constant" id="43" value="3" position="2529:109" size="140:91" />
+        <node operator="If" id="46" position="2889:109" size="140:154" />
+        <node operator="Equal" id="48" position="2709:109" size="140:133" />
+        <node operator="At" id="49" position="2160:-636" size="140:133" />
+        <node operator="Zero" id="51" position="1800:-536" size="140:91" />
+        <node operator="At" id="50" position="2620:-536" size="140:133" />
+        <node operator="ParseStringArrayToFloat" id="52" position="2360:-556" size="140:133" />
+        <node operator="IntAsFloat" id="54" position="2160:-476" size="140:112" />
+        <node groupnode="fuction array 2" id="11" position="380:-580" size="378:271" bg_color="#ff646464">
+            <nodes>22,28,29</nodes>
+        </node>
+        <node groupnode="pivot calculate center" id="47" position="1580:-280" size="678:284" bg_color="#ff646464">
+            <nodes>38,37,36,34</nodes>
+        </node>
+        <node groupnode="pivot selectable type" id="40" position="2360:-280" size="698:552" bg_color="#ff646464">
+            <nodes>48,35,45,30,46,23,43</nodes>
+        </node>
+        <node groupnode="Height" id="55" position="691:659" size="918:399" bg_color="#ff646464">
+            <nodes>25,26,24,13,12,17,27</nodes>
+        </node>
+        <node groupnode="CSV file import" id="53" position="60:-200" size="760:312" bg_color="#ff646464">
+            <nodes>41,14,5,1</nodes>
+        </node>
+        <node groupnode="function array vector" id="57" position="200:220" size="1838:868" bg_color="#ff646464">
+            <nodes>7,10,8,15,55,56</nodes>
+        </node>
+        <node groupnode="output create spline" id="39" position="2180:600" size="938:409" bg_color="#ffffca65">
+            <nodes>4,3,0,20,19</nodes>
+        </node>
+        <node groupnode="pivot get first" id="44" position="1791:-665" size="978:310" bg_color="#ff646464">
+            <nodes>50,54,51,52,49</nodes>
+        </node>
+        <node groupnode="Width" id="56" position="691:269" size="698:354" bg_color="#ff646464">
+            <nodes>18,2,16,9</nodes>
+        </node>
     </nodes>
     <connections>
         <connection sourcenode="5" sourceport="0" destnode="1" destport="0" />
@@ -72,7 +94,6 @@
         <connection sourcenode="7" sourceport="0" destnode="8" destport="1" />
         <connection sourcenode="1" sourceport="0" destnode="6" destport="0" />
         <connection sourcenode="15" sourceport="1" destnode="6" destport="1" />
-        <connection sourcenode="8" sourceport="0" destnode="11" destport="0" />
         <connection sourcenode="8" sourceport="0" destnode="9" destport="0" />
         <connection sourcenode="18" sourceport="0" destnode="15" destport="0" />
         <connection sourcenode="27" sourceport="0" destnode="15" destport="1" />
